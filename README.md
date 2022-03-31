@@ -54,3 +54,29 @@ VMWare는 www.vmware.com 로 들어가서 window버전을 다운로드 했습니
 finish  
 
 ![1-10](./images/1-10.png)  
+
+VMware 실행된 모습입니다.
+
+![1-11](./images/1-11.png)  
+
+Ubuntu는 https://ubuntu.com/ 로 들어가서 Download -> Ubuntu Desktop  
+
+![2-0](./images/2-0.png)  
+
+![2-1](./images/2-1.png)  
+
+다운 받았으면 VMware를 실행하고 "Create a New Virtual Machine"를 클릭합니다.  
+
+![2-2](./images/2-2.png)  
+
+"Installer disc image file (iso)"를 체크하고 Browse를 클릭해서 우분투 이미지 파일을 찾은 후에 next.  
+
+![2-3](./images/2-3.png)  
+
+우분투에서 사용할 계정 정보를 입력하고 next(나중에 이 계정으로 로그인을 할 예정입니다)  
+
+![2-4](./images/2-4.png)  
+
+바로 next
+
+![2-5](./images/2-5.png)  
