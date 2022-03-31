@@ -62,7 +62,7 @@ VMware 실행된 모습입니다.
 Ubuntu는 https://ubuntu.com/ 로 들어가서 Download -> Ubuntu Desktop  
 
 ![2-0](./images/2-0.png)  
-
+  
 ![2-1](./images/2-1.png)  
 
 다운 받았으면 VMware를 실행하고 "Create a New Virtual Machine"를 클릭합니다.  
