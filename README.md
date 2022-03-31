@@ -80,3 +80,42 @@ Ubuntu는 https://ubuntu.com/ 로 들어가서 Download -> Ubuntu Desktop
 바로 next
 
 ![2-5](./images/2-5.png)  
+
+저는 용량을 20GB로 설정하고  
+Store virtual disk as a single file: VMDK 파일을 단일 파일로 생성  
+Split virtual disk into multiple files: VMDK 파일을 2GB로 분할하여 생성  
+둘 중에 저는 첫번째를 선택하고 next했습니다.  
+
+![2-6](./images/2-6.png)  
+
+Customize Hardware를 클릭하면 메모리 설정을 할 수 있습니다. 설정 다하고 finish  
+
+![2-7](./images/2-7.png)  
+
+![2-8](./images/2-8.png)  
+
+"Play virtual machine" 버튼을 클릭하여 가상 머신을 실행해 줍니다.  
+실행완료하는데 1시간은 가볍게 넘을 걸로 기억합니다.  
+CPU때문인지 진행 중에 유트브나 게임을 키면 렉이 심하게 걸려서 아무것도 못하고 기다렸습니다.  
+
+![2-9](./images/2-9.png)  
+
+설치가 완료되면 이전에 만들어둔 계정으로 로그인 할 수 있습니다.  
+
+![2-10](./images/2-10.png)  
+
+잠깐 자리 비운 사이에 갑자기 실행 화면이 검은 색으로 변해서 오류가 발생했나 싶어서 당황했지만  
+
+![2-11](./images/2-11.png)  
+
+다행스럽게도 그냥 화면 클릭하면 풀립니다. 이게 일정시간동안 가만히 두면 화면 잠금처리 되는 것 같습니다.  
+
+![2-12](./images/2-12.png)  
+
+이제 로그인을 하면  
+
+![2-13](./images/2-13.png)  
+
+우분투 설치 완료된 모습을 볼 수 있습니다.  
+
+![2-14](./images/2-14.png)  
