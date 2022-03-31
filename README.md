@@ -10,7 +10,47 @@ IT 기기, 생활용품 등 본인의 관심사에 관련된 제품의 비평을
 + 댓글 관리 : 사이트 관리자가 제품에 관한 비평이랑 전혀 관련 없는 댓글을 삭제할 수 있도록 함
 ## 사용할 기술
 자바 스크립트
-## 1주차
+# 1주차
 웹 서버를 세팅하기 위해 VMWare이랑 Ubuntu를 설치했습니다.  
 VMWare는 www.vmware.com 로 들어가서 window버전을 다운로드 했습니다.  
-![1-0](./images/1-0.png)
+![1-0](./images/1-0.png)  
+
+바로 next  
+
+![1-1](./images/1-1.png)  
+
+동의 체크 후 Next  
+
+![1-2](./images/1-2.png)  
+
+바로 next  
+
+![1-3](./images/1-3.png)  
+
+2개 다 체크 해제 후 next  
+
+![1-4](./images/1-4.png)  
+
+2개 다 체크 하고 next  
+
+![1-5](./images/1-5.png)  
+
+인스톨  
+
+![1-6](./images/1-6.png)  
+
+이거 생각보다 오래 걸렸습니다.  
+
+![1-7](./images/1-7.png)  
+
+설치 완료  
+
+![1-8](./images/1-8.png)  
+
+1번째 체크 후 continue  
+
+![1-9](./images/1-9.png)  
+
+finish  
+
+![1-10](./images/1-10.png)  
