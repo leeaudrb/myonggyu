@@ -124,3 +124,34 @@ CPU때문인지 진행 중에 유트브나 게임을 키면 렉이 심하게 걸
 가상환경을 담당하는 Docker를 설치해야 하는데  
 https://blog.dalso.org/linux/ubuntu-20-04-lts/13118  
 cmd 같은 곳에 코드를 입력해야 하는데 검은 화면이 어떤 프로그램인지 몰라서 설치를 못하는 중입니다.  
+# 2주차  
+저번에 설치했던 vmware이랑 우분투는 용량을 많이 요구하면서 버퍼링이 너무 걸려서  
+포기하고 윈도우10 웹서버를 구축하기 위해 APM(Apache + PHP + Mysql)을 설치했습니다.  
+
+Apache는 https://www.apachelounge.com/download/ 로 들어가서 압축파일을 다운받고  
+
+![3-0](./images/3-0.png)  
+
+압축을 풀고 Apache24를 C:\로 옮기고 conf로 들어가서 http.conf를 메모장으로 연결해서  
+
+![3-1](./images/3-1.png)  
+
+ServerRoot가  C:/Apache24로 되어있는지 확인해주고  
+
+![3-2](./images/3-2.png)  
+
+Listen이 80으로 설정되어 있는지 확인해 줍니다.  
+
+![3-3](./images/3-3.png)  
+
+ServerName은 반드시 바꿀 필요는 없습니다.  
+
+![3-4](./images/3-4.png)  
+
+이 경로로 들어가서 httpd.exe파일을 실행시키기 위해 콘솔에서 실행해야 합니다.
+
+![3-5](./images/3-5.png)  
+
+cmd를 관리자 권한으로 실행해서 이렇게 입력하면 됩니다. 이 화면은 딱히 큰 이상은 없었습니다.  
+
+![3-6](./images/3-6.png)  
