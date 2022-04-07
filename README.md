@@ -155,3 +155,63 @@ ServerName은 반드시 바꿀 필요는 없습니다.
 cmd를 관리자 권한으로 실행해서 이렇게 입력하면 됩니다. 이 화면은 딱히 큰 이상은 없었습니다.  
 
 ![3-6](./images/3-6.png)  
+
+보안 경고가 뜨면 '액세스 허용'을 누르면 됩니다.  
+
+![3-7](./images/3-7.png)  
+
+이제 아파치모니터를 실행하면  
+
+![3-8](./images/3-8.png)  
+
+화면 오른쪽 아래의 아이콘을 마우스 우클릭하고 open apache monitor를 클릭하고 start를 누르면  
+
+![3-9](./images/3-9.png)  
+
+이렇게 바뀝니다.  
+
+![3-10](./images/3-10.png)  
+
+웹 브라우저를 실행하여 http://localhost/ 로 접속하여 아래 페이지가 뜨면 아파치 웹서버 설치가 완료되었다는 것을 알 수 있습니다.  
+
+![3-11](./images/3-11.png)  
+
+PHP는 https://windows.php.net/download/ 로 들어가서 Thread Safe Zip파일을 다운 받았습니다.  
+
+![3-12](./images/3-12.png)  
+
+C드라이브에 'PHP'라는 이름의 파일을 만들고 나서 압축파일을 해제했습니다.  
+
+![3-13](./images/3-13.png)  
+
+php.ini-production 라는 파일을 php.ini 로 변경해줍니다.  
+
+![3-14](./images/3-14.png)  
+
+변경된 그 파일을 메모장으로 열어서 ;extension_dir = "./" 를 다음과 같이 수정했습니다.  
+
+1. 앞에 세미콜론 제거하기  
+2. 큰 따옴표 안을 "PHP 설치 경로/ext" 다음과 같이 수정하기  
+
+저는 아래와 같이 수정하였습니다.  
+
+![3-15](./images/3-15.png)  
+
+![3-16](./images/3-16.png)  
+
+Apache와 PHP 연동은 아파치 설정파일에서 설정합니다. 아래 경로의 Apache 설정파일을 메모장으로 실행해서  
+C:\Apache24\conf\httpd.conf  
+<IfModule dir_module>과 밑에 있는 </IfModule> 사이에 DirectoryIndex index.html을 다음과 같이 수정했습니다.  
+
+![3-17](./images/3-17.png)  
+
+![3-18](./images/3-18.png)  
+
+그리고 맨 밑에 다음과 같이 추가했습니다.  
+
+![3-19](./images/3-19.png)  
+
+cmd를 관리자 권한으로 실행해서 다음과 같이 입력했습니다.  
+
+![3-20](./images/3-20.png)  
+
