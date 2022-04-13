@@ -211,7 +211,21 @@ C:\Apache24\conf\httpd.conf
 
 ![3-19](./images/3-19.png)  
 
-cmd를 관리자 권한으로 실행해서 다음과 같이 입력했습니다.  
+cmd를 관리자 권한으로 실행해서 다음과 같이 입력해서 PHP 연동 되었습니다.  
 
 ![3-20](./images/3-20.png)  
+
+이제 PHP 연동이 잘 되었는지 테스트 해보겠습니다.  
+Apache 웹문서 저장공간(C:\apache24\htdocs)에 phpinfo.php 라는 파일을 만들고 메모장으로 다음과 같이 내용을 입력합니다.  
+
+![3-21](./images/3-21.png)  
+
+파일을 저장하고 웹브라우저에 localhost/phpinfo.php를 입력합니다.
+다음과 같이 PHP 설치정보가 나온다면, 정상적으로 설치가 완료된 것을 알 수 있습니다.  
+
+![3-22](./images/3-22.png)  
+
+MYSQL는 https://dev.mysql.com/downloads/mysql/ 로 들어가서 Windows (x86, 64-bit), ZIP Archive를 다운 받았습니다.  
+
+![3-23](./images/3-23.png)  
 
