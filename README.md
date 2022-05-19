@@ -482,4 +482,6 @@ Tomcat은 Java Servlet과 JSP가 실행할 수 있는 환경을 제공하여 동
 이것이라면 데이터베이스 적용 시킬 수 있을 것 같아서 설치하게 되었습니다.  
 
 일단 이 링크로 들어가서 왼쪽에 있는  
-https://tomcat.apache.org/
+https://tomcat.apache.org/  
+
+![5-0](./images/5-0.png)  
