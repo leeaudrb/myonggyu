@@ -481,7 +481,19 @@ Tomcat은 Java Servlet과 JSP가 실행할 수 있는 환경을 제공하여 동
 데이터베이스 연결 및 데이터 조작, 다른 응용프로그램들과 상호 작용이 가능하다는 것을 알게 되어서  
 이것이라면 데이터베이스 적용 시킬 수 있을 것 같아서 설치하게 되었습니다.  
 
-일단 이 링크로 들어가서 왼쪽에 있는  
+일단 이 링크로 들어가서 왼쪽에 있는 다운로드 부분에서 가장 최신버전인 Tomcat 10을 클릭하고  
 https://tomcat.apache.org/  
 
 ![5-0](./images/5-0.png)  
+
+스크롤 내리다가 Binary Distributions에서  
+32-bit/64-bit Windows Service Installer (pgp, sha512)을 다운 받았습니다.  
+
+![5-1](./images/5-1.png)  
+
+이 파일을 실행하면 다음과 같이 진행합니다.  
+
+![5-2](./images/5-2.png)![5-3](./images/5-3.png)  
+![5-4](./images/5-4.png)![5-5](./images/5-5.png)  
+![5-6](./images/5-6.png)![5-7](./images/5-7.png)  
+![5-8](./images/5-8.png)  
