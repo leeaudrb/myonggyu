@@ -475,7 +475,7 @@ jQuery : $("#myPara").html("안녕하세요?");
 3. 브라우저의 종류나 브라우저의 버전을 따질 필요가 없습니다.  
 
 그래서 저는 자바스크립트는 포기하고 jQuery를 공부하기로 결정했습니다.  
-# 12주차  
+# 11주차  
 제가 책을 보면서 공부하는 중에 Tomcat에 대한 내용이 나와있어서 이것에 대해 좀더 자세히 보니까  
 Tomcat은 Java Servlet과 JSP가 실행할 수 있는 환경을 제공하여 동적인 페이지를 생성하고  
 데이터베이스 연결 및 데이터 조작, 다른 응용프로그램들과 상호 작용이 가능하다는 것을 알게 되어서  
@@ -497,3 +497,94 @@ https://tomcat.apache.org/
 ![5-4](./images/5-4.png)![5-5](./images/5-5.png)  
 ![5-6](./images/5-6.png)![5-7](./images/5-7.png)  
 ![5-8](./images/5-8.png)  
+
+설치 후 서비스가 제대로 실행되는지 확인하려면 http://localhost:8080 을 웹 브라우저에 실행해봅니다.  
+다음과 같이 나타나면 정상입니다.  
+
+![5-9](./images/5-9.png)  
+
+그리고 톰캣을 사용하다 보면 한글이 깨지는 경우가 발생할 수 있기 때문에 다음과 같은 경로에 들어가서  
+C:\Program Files\Apache Software Foundation\Tomcat 10.0\conf  
+
+![5-10](./images/5-10.png)  
+
+server.xml파일을 메모장으로 열어서 이것을 추가합니다.  
+URIEncoding="UTF-8"  
+
+![5-11](./images/5-11.png)![5-12](./images/5-12.png)  
+
+일단 jsp파일을 테스트 할려면 위해 일단 톰캣이 실행되고 있는 지 확인하기 위해 다음과 같은 경로에 들어가서  
+C:\Program Files\Apache Software Foundation\Tomcat 10.0\bin  
+Tomcat10w.exe 을 실행해서 start가 되어있는지 확인합니다.  
+
+![5-13](./images/5-13.png)  
+
+다음은 C:\Program Files\Apache Software Foundation\Tomcat 10.0\webapps 경로에 임시로 test 파일을 만들고  
+반드시 WEB-INF 파일을 복사해서 test 파일에 붙여넣기를 해야 합니다.  
+
+![5-14](./images/5-14.png)![5-15](./images/5-15.png)  
+
+메모장이나 EditPlus로 jsp 파일을 작성합니다.  
+저장할 때 인코딩 부분은 UTF-8 로 저장해야 합니다.  
+
+![5-16](./images/5-16.png)  
+
+이것을 웹 브라우저 http://localhost:8080/test/hello.jsp 로 입력합니다.  
+그런데 한글이 깨졌습니다.  
+
+![5-17](./images/5-17.png)  
+
+이런 경우에는 jsp 파일에 다음과 같이 추가하면 됩니다.  
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>  
+
+![5-18](./images/5-18.png)  
+
+그러면 다음과 같이 제대로 나옵니다.  
+
+![5-19](./images/5-19.png)  
+
+책에서는 전문적으로 개발하려면 이클립스(eclipse)를 통하여 JSP 프로그램을 개발하는 편이 좋다고 해서  
+이클립스랑 톰캣을 연동하기로 했습니다.  
+
+일단 저는 C:\JSP\Project 에 Workspace 경로를 설정해서 프로젝트를 만들기로 했습니다.  
+맨 위로 window -> preferences 클릭하고  java -> installed JREs 를 클릭해서 jdk, jre 를 추가하기 위해  
+
+![5-1901](./images/5-1901.png)  
+
+Add를 클릭하고 Standard VM 으로 가서 2개의 경로를 찾아서 추가합니다.  
+
+![5-1902](./images/5-1902.png)  
+
+다음은 server -> runtime environments 로 들어가서 다음과 같이 설정합니다.  
+
+![5-20](./images/5-20.png)![5-21](./images/5-21.png)  
+![5-23](./images/5-23.png)![5-24](./images/5-24.png)  
+![5-25](./images/5-25.png)![5-26](./images/5-26.png)  
+
+오른쪽 맨 위에 Java EE 아이콘을 클릭해주고  
+
+![5-27](./images/5-27.png)  
+
+프로젝트를 생성하고 jsp 파일을 작성해서 테스트 해봅니다.  
+
+![5-28](./images/5-28.png)![5-29](./images/5-29.png)  
+![5-30](./images/5-30.png)![5-31](./images/5-31.png)  
+
+그런데 오류가 떴습니다.  
+
+![5-32](./images/5-32.png)  
+
+저는 이 부분에서 jdk 를 jre 로 변경해서 다시 시도해도 안되고  
+
+![5-23](./images/5-23.png)  
+
+같은 이름의 두 개의 파일을 메모장으로 열어서 비교했는데 내용이 달라서 톰캣쪽에 있던 것을 복붙해서 실행해도 안되고
+
+![5-33](./images/5-33.png)  
+
+아예 프로젝트 다 지우고 처음부터 다시 만들어서 시도해도 안되서 이클립스로 톰캣을 실행하는 것에 어려움을 겪고 있습니다.  
+그래서 저는 C:\Program Files\Apache Software Foundation\Tomcat 10.0\webapps\test 이 경로에 파일들을 작성해서 실행되도록 노력해보고 있습니다.  
+
+이것은 로그인, 회원가입 뼈대만 대충 형성했습니다.  
+
+![5-34](./images/5-34.png)![5-35](./images/5-35.png)  
