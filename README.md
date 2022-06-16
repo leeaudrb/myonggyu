@@ -589,7 +589,7 @@ Add를 클릭하고 Standard VM 으로 가서 2개의 경로를 찾아서 추가
 
 ![5-34](./images/5-34.png)![5-35](./images/5-35.png)  
 
-# 1주차  
+# 마지막 주차  
 
 ![6-1](./images/6-1.png)  
 ![6-2](./images/6-2.png)  
