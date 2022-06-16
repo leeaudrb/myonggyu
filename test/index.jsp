@@ -67,11 +67,7 @@
     </header>
 
     <div class="main_container">
-        <div class="conA">
-            <div class="slide img1"></div>
-            <div class="slide img2"></div>
-            <div class="slide img3"></div>
-        </div>
+        
         <div class="conB">
             <div class="conB_title">
                 <h3>메인화면</h3>
